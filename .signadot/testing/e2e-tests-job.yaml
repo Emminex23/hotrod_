@@ -11,7 +11,7 @@ spec:
       https://github.com/Emminex23/hotrod_.git
 
     # Run the cypress demo test
-    cd hotrod
+    cd hotrod_
     export CYPRESS_SIGNADOT_ROUTING_KEY=$SIGNADOT_ROUTING_KEY
     export CYPRESS_HOTROD_NAMESPACE="@{namespace}"
     npx cypress run --spec cypress/e2e/hotrod-e2e.cy.js
