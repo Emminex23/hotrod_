@@ -14,6 +14,9 @@ spec:
     cd hotrod_
     export CYPRESS_SIGNADOT_ROUTING_KEY=$SIGNADOT_ROUTING_KEY
     export CYPRESS_HOTROD_NAMESPACE="@{namespace}"
+    npm ci
+    npm run start &
+    npm install cypress --save-dev
     npx cypress run --spec cypress/e2e/hotrod-e2e.cy.js
 
   routingContext:
