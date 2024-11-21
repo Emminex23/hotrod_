@@ -1,0 +1,10 @@
+name: cypress
+spec:
+  cluster: "@{cluster}"
+  labels:
+  namespace: signadot
+  image: cypress/included:latest
+  jobTimeout: 30m
+  scaling:
+    manual:
+      desiredPods: 1

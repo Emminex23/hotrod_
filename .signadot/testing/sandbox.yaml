@@ -1,0 +1,14 @@
+name: new-driver
+spec:
+  description: Test the updated driver service
+  cluster: demo-cluster
+  forks:
+    - forkOf:
+        kind: Deployment
+        name: driver
+        namespace: hotrod
+      customizations:
+        images:
+          - image: >-
+                   signadot/hotrod:8b99a5b2ef04c4219e42f3409cd72066279fd0e4-linux-amd64
+            container: hotrod
