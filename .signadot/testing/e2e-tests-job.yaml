@@ -14,7 +14,7 @@ spec:
     cd hotrod_
     export CYPRESS_SIGNADOT_ROUTING_KEY=$SIGNADOT_ROUTING_KEY
     export CYPRESS_HOTROD_NAMESPACE="@{namespace}"
-    npx cypress run --headed --spec cypress/e2e/hotrod-e2e.cy.js
+    npx cypress open --spec cypress/e2e/hotrod-e2e.cy.js
 
   routingContext:
     sandbox: "@{sandbox}"
