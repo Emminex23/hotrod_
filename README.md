@@ -1,10 +1,5 @@
 # Hot R.O.D. - Rides on Demand
 
-This demo is based on the Jaeger HotROD demo but has 
-been modified considerably to showcase Signadot & Sandboxes.
-
-![image](/docs/graph.png)
-
 ## Running
 
 First, [install Signadot Operator](https://www.signadot.com/docs/installation/signadot-operator)
