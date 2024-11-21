@@ -4,7 +4,6 @@ module.exports = defineConfig({
     e2e: {
         video: false,
         experimentalStudio: true,
-        browser: 'chrome',
         env: {
             HOTROD_NAMESPACE: 'hotrod',
             SIGNADOT_ROUTING_KEY: '',
