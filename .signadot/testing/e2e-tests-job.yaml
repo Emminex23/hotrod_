@@ -12,9 +12,14 @@ spec:
 
     # Run the cypress demo test
     cd hotrod_
-    export CYPRESS_SIGNADOT_ROUTING_KEY=$SIGNADOT_ROUTING_KEY
+
     export CYPRESS_HOTROD_NAMESPACE="@{namespace}"
+    export CI=true
+
+    npm ci
+    set +e
     npx cypress run
+    set -e
 
   routingContext:
     sandbox: "@{sandbox}"
