@@ -14,7 +14,8 @@ spec:
     cd hotrod_
     export CYPRESS_SIGNADOT_ROUTING_KEY=$SIGNADOT_ROUTING_KEY
     export CYPRESS_HOTROD_NAMESPACE="@{namespace}"
-    npx cypress run --browser chrome
+    npx cypress info
+    npx cypress run --browser electron
 
 
   routingContext:
