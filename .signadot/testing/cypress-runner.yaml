@@ -2,7 +2,8 @@ name: cypress
 spec:
   cluster: "@{cluster}"
   labels:
-  namespace: signadot
+    env: "@{env}"
+  namespace: hotrod
   image: cypress/included:latest
   jobTimeout: 30m
   scaling:
